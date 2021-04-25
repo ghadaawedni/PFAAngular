@@ -1,41 +1,51 @@
-<div class="container align-items-center">
-<div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
-  <div class="wrapper wrapper--w780">
-    <div class="card card-3">
-      <div class="card-heading"></div>
-      <div class="card-body">
-        <h2 class="title">Registration Info</h2>
-        <form method="POST">
-          <div class="input-group">
-            <input class="input--style-3" type="text" placeholder="Name" name="name">
+<section id="don">
+  <div class="container" data-aos="fade-up">
+    <div class="page-wrapper bg-green p-t-100 p-b-100 font-robo">
+      <div class="wrapper wrapper--w680">
+        <div class="card card-1">
+          <div class="card-heading"></div>
+          <div class="card-body"  dir="rtl">
+            <h2 class="title text-center">مرحبا بك في فضاء المتبرع</h2>
+            <form method="POST">
+              <div class="input-group">
+                <input class="input--style-1" type="text" placeholder="إسمك" name="name">
+              </div>
+
+              <div class="input-group">
+                <input class="input--style-1" type="text" placeholder="لقبك" name="name">
+              </div>
+              <div class="input-group">
+                <input class="input--style-1" type="text" placeholder=" رقم هاتفك" name="name">
+              </div>
+              <div class="input-group">
+                <input class="input--style-1" type="text" placeholder=" إيمايلك" name="name">
+              </div>
+              <div class="input-group">
+                <input class="input--style-1" type="text" placeholder=" عنوانك" name="name">
+              </div>
+                <div class="input-group">
+                  <p>وصل تبرع بقيمة</p>
+                  <div class="rs-select2 js-select-simple select--no-search mr-auto ">
+                    <select name="gender">
+                      <option disabled="disabled" selected="selected">----</option>
+                      <option>10 د.ت</option>
+                      <option>  20 د.ت</option>
+                      <option>  30 د.ت</option>
+                      <option> مبلغ حر</option>
+                    </select>
+                    <div class="select-dropdown"></div>
+                </div>
+              </div>
+              <div class="input-group">
+                <input class="input--style-1" type="text" placeholder=" مقدار التبرع المقترح" name="name">
+              </div>
+              <div class="p-t-20" >
+                <button class="btn btn--radius btn--green left" type="submit">إرسال</button>
+              </div>
+            </form>
           </div>
-          <div class="input-group">
-            <input class="input--style-3 js-datepicker" type="text" placeholder="Birthdate" name="birthday">
-            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
-          </div>
-          <div class="input-group">
-            <div class="rs-select2 js-select-simple select--no-search">
-              <select name="gender">
-                <option disabled="disabled" selected="selected">Gender</option>
-                <option>Male</option>
-                <option>Female</option>
-                <option>Other</option>
-              </select>
-              <div class="select-dropdown"></div>
-            </div>
-          </div>
-          <div class="input-group">
-            <input class="input--style-3" type="email" placeholder="Email" name="email">
-          </div>
-          <div class="input-group">
-            <input class="input--style-3" type="text" placeholder="Phone" name="phone">
-          </div>
-          <div class="p-t-10">
-            <button class="btn btn--pill btn--green" type="submit">Submit</button>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
-</div>
+</section>
