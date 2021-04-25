@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <style>
+    </style>
+  </head>
+  <body>
+    <div class="testbox" style="text-align: right;"  dir="rtl" >
+      <form action="/">
+        <div class="banner" style="text-align: right;" dir="rtl">
+          <h1>الانخراط في جمعية سنابل الخير</h1>
+        </div>
+        <div class="item" >
+          <p> الاسم</p>
+          <div class="name-item">
+            <input type="text" name="First" placeholder="الاسم" style="text-align: right;"/>
+            <input type="text" name="Last" placeholder="اللقب" style="text-align: right;"/>
+          </div>
+        </div>
+        <div class="item"  dir="rtl">
+          <p> تاريخ الولادة</p>
+          <i class="fas fa-calendar-alt"></i>
+          <input type="date" name="bdate" required/>
+        </div>
+        
+      <div class="question">
+          <p>الحالة المدنية </p>
+          <div class="question-answer">
+            <input type="radio" value="none" id="single" name="status"/>
+            <label for="single" class="radio"><span>اعزب</span></label>
+            <input type="radio" value="none" id="married" name="status" />
+            <label for="married" class="radio"><span>متزوج</span></label>
+          </div>
+        </div>
+        
+        
+        <div class="item">
+          <p>الهاتف</p>
+          <input type="text" name="name"/>
+        </div>
+        <div class="item">
+          <p>الايميل</p>
+          <input type="mail" name="mail" placeholder="exemple@gmail.com" required>
+        </div>
+      <div class="item">
+        <p>العمل</p>
+        <select>
+          <option value="">طبيب</option>
+          <option value="1">استاذ</option>
+          <option value="2">رجل اعمال</option>
+          <option value="3">مهندس</option>
+          <option value="4">عامل يومي</option>
+          <option value="5" selected>اعمال حرة </option>
+        </select>
+      </div>
+        <div class="item">
+          <p>العنوان</p>
+          <input type="text" name="name" placeholder="العنوان"/>
+          <div class="city-item">
+            <input type="text" name="name" placeholder="المدينة" />
+            <input type="text" name="name" placeholder="منطقة" />
+            <input type="text" name="name" placeholder="البريد" />
+          </div>
+        </div>
+        <div class="item">
+          <p>صف نفسك </p>
+          <textarea rows="3"></textarea>
+        </div>
+        <div class="btn-block">
+          <button type="submit" href="/">ارسال</button>
+        </div>
+      </form>
+      
+    </div>
+  </body>
+</html>

@@ -7,6 +7,11 @@ import {DefinitionComponent} from './components/about/definition/definition.comp
 import {StructureComponent} from './components/about/structure/structure.component';
 import {DonComponent} from './components/don/don.component';
 import {ContactComponent} from './components/contact/contact.component';
+import { AideComponent } from './components/aide/aide.component';
+import { GarantieComponent } from './components/aide/garantie/garantie.component';
+import { ServiceComponent } from './components/aide/service/service.component';
+import { InscritComponent } from './components/aide/inscrit/inscrit.component';
+import { ImportanceComponent } from './components/aide/importance/importance.component';
 const routes: Routes = [
   { path: '', component : HomeComponent},
   { path: 'home',  component : HomeComponent},
@@ -15,6 +20,11 @@ const routes: Routes = [
   { path: 'structure',  component : StructureComponent},
   { path: 'donate',  component : DonComponent},
   { path: 'contact',  component : ContactComponent},
+  { path: 'aide' , component: AideComponent},
+  { path : 'garantie' , component: GarantieComponent},
+  { path : 'service' , component: ServiceComponent} ,
+  { path : 'inscrit' , component: InscritComponent} , 
+  { path : 'importance' , component :ImportanceComponent}
   // {
   //   path: 'about',
   //   component: AboutComponent, // this is the component with the <router-outlet> in the template
