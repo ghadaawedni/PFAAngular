@@ -1,0 +1,108 @@
+
+<div class="container-fluid" dir="rtl">
+  <div class="row">
+      <div class="nav nav-pills flex-column" dir="rtl" style="text-align: right">
+        <h2 class="widget-title">تصنيفات</h2>
+        <div class="list-group">
+          <select class="form-select" aria-label="Default select example" [(ngModel)]="evName" (ngModelChange)="changed()">
+            <option *ngFor="let event of events" [ngValue]="event.text">{{event.text}}</option>
+          </select>
+        </div>
+        </div>
+    <div class="col pt-1">
+      <section id="events" class="events">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title" style="text-align: right">
+            <h2>{{evName}}</h2>
+            <p>{{evName}}</p>
+
+          </div>
+          <div class="row">
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/img/events-1.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><a href="">Introduction to webdesign</a></h5>
+                  <p class="font-italic text-center">Sunday, September 26th at 7:00 pm</p>
+                  <p class="card-text">Lorem ipsum dolor sit amet,</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/img/events-2.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><a href="">Marketing Strategies</a></h5>
+                  <p class="font-italic text-center">Sunday, November 15th at 7:00 pm</p>
+                  <p class="card-text">Sed runt explicabo</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/img/events-2.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><a href="">Marketing Strategies</a></h5>
+                  <p class="font-italic text-center">Sunday, November 15th at 7:00 pm</p>
+                  <p class="card-text">Sed ut perspiuaa sunt explicabo</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/img/events-2.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><a href="">Marketing Strategies</a></h5>
+                  <p class="font-italic text-center">Sunday, November 15th at 7:00 pm</p>
+                  <p class="card-text">Sed ut perspiciabeatae vitae dicta sunt explicabo</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/img/events-2.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><a href="">Marketing Strategies</a></h5>
+                  <p class="font-italic text-center">Sunday, November 15th at 7:00 pm</p>
+                  <p class="card-text">Sed ut perspiciaam remchitecto beatae vitae dicta sunt explicabo</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/img/events-2.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><a href="">Marketing Strategies</a></h5>
+                  <p class="font-italic text-center">Sunday, November 15th at 7:00 pm</p>
+                  <p class="card-text">Sed ut pem explicabo</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section><!-- End Events Section -->
+    </div>
+  </div>
+</div>
+
+
+
+

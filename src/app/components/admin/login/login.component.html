@@ -1,0 +1,38 @@
+<section id="why-us" class="why-us">
+  <div class="container" data-aos="fade-up">
+    <div class="wrapper fadeInDown">
+      <!-- Login Form -->
+      <div class="login-form">
+        <form  name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" dir="rtl" >
+          <div class="avatar">
+            <img src="assets/img/avatar.png" alt="Avatar">
+          </div>
+          <h2 class="text-center">دخول الأعضاء</h2>
+          <div class="form-group">
+            <input type="text" class="form-control" name="username" placeholder="اسم دخول" [(ngModel)]="form.username" #username="ngModel" required="required">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="كلمة سر"  [(ngModel)]="form.password" #password="ngModel" required="required">
+          </div>
+          <div *ngIf="f.submitted && password.invalid">
+            <div *ngIf="password.errors.required">Password is required</div>
+            <div *ngIf="password.errors.minlength">Password must be at least 6 characters</div>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg btn-block">دخول</button>
+            <div *ngIf="f.submitted && isLoginFailed" class="alert alert-danger">
+              دخول مرفوظ {{errorMessage}}
+            </div>
+          </div>
+          <div class="clearfix">
+            <label class="pull-left checkbox-inline"><input type="checkbox" class="col-auto">"> تذكر كلمة المرور</label>
+            <a href="#" class="pull-right">نسيت كلمة المرور</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<router-outlet></router-outlet>

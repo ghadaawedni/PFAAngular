@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NavBarService } from '../../nav-bar/nav-bar.service';
 @Component({
   selector: 'app-structure',
   templateUrl: './structure.component.html',
@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StructureComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor( public nav: NavBarService) {
   }
-
+  ngOnInit(): void {
+    this.nav.show();
+  }
 }

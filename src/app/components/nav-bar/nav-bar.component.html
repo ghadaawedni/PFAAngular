@@ -1,25 +1,25 @@
 
-<header id="header" >
+<header id="header" *ngIf="nav.visible">
   <div class="container d-flex align-items-center" dir="rtl">
 
     <h1 class="logo mr-md-n5" ><a href="index.html">سنابل خير</a></h1>
     <!-- Uncomment below if you prefer to use an image logo -->
     <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-    <nav class="nav-menu d-none d-lg-block mr-auto">
+    <nav class="nav-menu d-none d-lg-block mr-auto" >
       <ul>
-        <li class="active"><a href="index.html">  الرئيسية</a></li>
-        <li class="drop-down"><a routerLink="about">من نحن؟</a>
+        <li class="active"><a routerLink="home">  الرئيسية</a></li>
+        <li class="drop-down" ><a routerLink="about">من نحن؟</a>
           <ul dir="rtl">
-            <li><a routerLink="definition"> تعريف الجمعية</a></li>
+            <li ><a routerLink="definition"> تعريف الجمعية</a></li>
             <li><a routerLink="structure">هيكلة الجمعية</a></li>
           </ul>
 
         </li>
-        <li class="drop-down "><a href="courses.html">جديدنا</a>
+        <li class="drop-down "><a routerLink="news">جديدنا</a>
           <ul dir="rtl">
-            <li><a href="#">  اخر الأخبار</a></li>
-            <li><a href="#">التظاهرات القادمة</a></li>
+            <li><a routerLink="latestnews" >  اخر الأخبار</a ></li>
+            <li><a routerLink="manifestation" >التظاهرات القادمة</a></li>
           </ul>
         </li>
         <li><a href="events.html">للتمتع بخدماتنا</a></li>
@@ -37,6 +37,7 @@
     </nav><!-- .nav-menu -->
 
     <a routerLink="donate" class="get-started-btn mr-auto">تبرع هنا</a>
+    <a routerLink="login" class="get-started-btn position-relative">فضاء الإدارة</a>
 
   </div>
 </header>

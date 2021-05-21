@@ -1,153 +1,87 @@
-
-<main id="main">
-  <!-- ======= Breadcrumbs ======= -->
-  <div class="breadcrumbs" data-aos="fade-in">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
-    </div>
-  </div><!-- End Breadcrumbs -->
-
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-    <div class="container" data-aos="fade-up">
-
-      <div class="row">
-        <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-          <img src="assets/img/about.jpg" class="img-fluid" alt="">
-        </div>
-        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-          <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-          <p class="font-italic">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.
+<!-- End who we are Section -->
+<section id="why-us" class="why-us">
+  <div class="container" data-aos="fade-up">
+      <div class="section-title" style="text-align: right">
+        <h2>من نحن؟</h2>
+        <p>من نحن؟</p>
+      </div>
+    <div class="row">
+      <div class="col-lg-6 d-flex " >
+        <div class="content" >
+          <h3 style="color: #0b2e13; text-align: right">
+          جمعية  سنابل الخير      </h3>
+          <p style="text-align: right">رؤيتنا و رسالتنا
+            نعمل على تحقيق الريادة والتميز في الرقي بالمجتمع و تحفيز الإبداع في العمل الخيرى.جمعيةسنابل الخير تمثل وسيلة لكل من يرغب في خدمة مجتمعه و مساعدة أفراده لينعم الجميع بحياة كريمة و يشعروا بالرضى لانتمائهم لهذا المجتمع. نطمح لرؤية الناس فرحين مستقرين في حياتهم اليومية و يجد كل ذي حاجة من يسنده و يعينه
           </p>
-          <ul>
-            <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-            <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-            <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-          </ul>
-          <p>
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          </p>
-
+          <div class="text-center">
+            <a href="about.html" class="more-btn">إقرأ المزيد <i class="bx bx-chevron-right"></i></a>
+          </div>
         </div>
       </div>
-
-    </div>
-  </section><!-- End About Section -->
-
-  <!-- ======= Counts Section ======= -->
-  <section id="counts" class="counts section-bg">
-    <div class="container">
-
-      <div class="row counters">
-
-        <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up">1232</span>
-          <p>Students</p>
-        </div>
-
-        <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up">64</span>
-          <p>Courses</p>
-        </div>
-
-        <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up">42</span>
-          <p>Events</p>
-        </div>
-
-        <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up">15</span>
-          <p>Trainers</p>
-        </div>
-
+      <div class="col-lg-6 h-50 pt-4 pt-lg-0 order-2" data-aos="fade-left" data-aos-delay="100">
+        <ngb-carousel  [showNavigationArrows]="true"
+                       [showNavigationIndicators]="true"
+                       interval="1000"
+                       [keyboard]="true"
+                       [pauseOnHover]="true"
+                       [wrap]="true"
+                       [activeId]="'sliderThree'">
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img src="assets/img/beautiful.jpg" alt="Random first slide" class="img-fluid">
+            </div>
+            <div class="carousel-caption" dir="rtl" >
+              <h3 >"يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنتُم مُّسْلِمُونَ"</h3>
+              <p>[آل عمران: 102]</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img src="assets/img/pr.jpg" alt="Random second slide" class="img-fluid">
+            </div>
+            <div class="carousel-caption" style="color:black" dir="rtl" >
+              <h3>"كافل اليتيم له أو لغيره، أنا وهو كهاتين في الجنة"</h3>
+              <p>عن رسول الله -صلى الله عليه وسلم</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img src="assets/img/little.jpg" alt="Random third slide" class="img-fluid">
+            </div>
+            <div class="carousel-caption"  style="color: black" dir="rtl" >
+              <h3>"كافل اليتيم له أو لغيره"</h3>
+              <p>عن رسول الله -صلى الله عليه وسلم</p>
+            </div>
+          </ng-template>
+        </ngb-carousel>
       </div>
-
     </div>
-  </section><!-- End Counts Section -->
 
-  <!-- ======= Testimonials Section ======= -->
-  <section id="testimonials" class="testimonials">
+  </div>
+</section><!-- End who are we  Section -->
+
+  <!-- ======= principles  Section ======= -->
+  <section id="principles" class="about" >
     <div class="container" data-aos="fade-up">
+    <div class="section-title" style="text-align: right">
+      <h2>الـمبادئ؟</h2>
+      <p>ما هي مبادئنا؟ </p>
+    </div>
+    <div class="container"  style="text-align: right" dir="rtl">
 
-      <div class="section-title">
-        <h2>Testimonials</h2>
-        <p>What are they saying</p>
-      </div>
-
-      <div  class="owl-drag testimonials-carousel" data-aos="zoom-in" data-aos-delay="50">
-
-        <div class="testimonial-wrap">
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
-
-        <div class="testimonial-wrap">
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
-
-        <div class="testimonial-wrap">
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
-
-        <div class="testimonial-wrap">
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
-
-        <div class="testimonial-wrap">
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
-
-      </div>
+        <h2 style=""> الـمبادئ التي تحكم عمل الـجمعية :</h2>
+        <ul style="font-size:20px">
+          <li><i class="icofont-check-circled btn--green"></i> ليس للجمعية طابع تجاري ولا سياسي بل هو اجتماعي وخيري صرف </li>
+          <li><i class="icofont-check-circled btn--green"></i>تعمل على رعاية وتنشئة الأيتام، بروح التضامن المتأصل والإحسان وحمايتهم من كل الأمراض الاجتماعية</li>
+          <li><i class="icofont-check-circled btn--green"></i> تستمد إنسانيتها من مبادئ الإسلام في التراحم و الإحسان</li>
+          <li><i class="icofont-check-circled btn--green"></i>تتعاون مع السلطات والهيئات العمومية والخاصة والجمعيات الأخرى ومع كل من يمد لها يد المساعدة</li>
+          <li><i class="icofont-check-circled btn--green"></i>تعتمد التدرج و التميّز بتقديم الخدمات من خلال إنشاء قاعدة بيانات دقيقة واعتماد زيارات ميدانيّة دوريّة للأيتام</li>
+          <li><i class="icofont-check-circled btn--green"></i>تعتمد الشفافيّة التامّة في التصرف</li>
+        </ul>
 
     </div>
-  </section><!-- End Testimonials Section -->
+    </div>
+  </section><!-- End principles Section -->
 
-</main><!-- End #main -->
+
 

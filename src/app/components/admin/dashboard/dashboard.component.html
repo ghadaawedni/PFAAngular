@@ -1,0 +1,13 @@
+<div *ngIf="isLoggedIn" >
+  Logged in as {{roles}}.
+  <button class="btn btn-secondary" (click)="logout()">Logout</button>
+</div>
+<div>
+  <h5 class="text-primary">Your Information</h5>
+  <p >
+    <strong>Username:</strong> {{info.username}}<br/>
+    <strong>Roles:</strong> {{info.authorities}}<br />
+    <strong>Token:</strong> {{info.token}}.
+  </p>
+</div>
+

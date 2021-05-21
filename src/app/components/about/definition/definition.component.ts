@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NavBarService } from '../../nav-bar/nav-bar.service';
 @Component({
   selector: 'app-definition',
   templateUrl: './definition.component.html',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DefinitionComponent implements OnInit {
 
-  constructor() { }
+
+  constructor( public nav: NavBarService) {
+  }
 
   ngOnInit(): void {
+    this.nav.show();
   }
 
 }

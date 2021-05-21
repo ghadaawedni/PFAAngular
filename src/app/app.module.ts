@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -10,13 +11,20 @@ import { AboutComponent } from './components/about/about.component';
 import {AboutModule} from './components/about/about.module';
 import { DonComponent } from './components/don/don.component';
 import { ContactComponent } from './components/contact/contact.component';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatOptionModule} from '@angular/material/core';
 import { AideComponent } from './components/aide/aide.component';
-import { GarantieComponent } from './components/aide/garantie/garantie.component';
-import { ServiceComponent } from './components/aide/service/service.component';
-import { InscritComponent } from './components/aide/inscrit/inscrit.component';
-import { ImportanceComponent } from './components/aide/importance/importance.component';
+import {AideModule} from './components/aide/aide.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NewsComponent } from './components/news/news.component';
+import { LatestnewsComponent } from './components/news/latestnews/latestnews.component';
+import { ManifestationComponent } from './components/news/manifestation/manifestation.component';
+import {FormsModule} from '@angular/forms';
+import { AdminComponent } from './components/admin/admin.component';
+import { DashboardComponent } from './components/admin/dashboard/dashboard.component';
+import { NavBarService } from './components/nav-bar/nav-bar.service';
+import { LoginComponent } from './components/admin/login/login.component';
+import { httpInterceptorProviders } from './components/auth/auth-interceptor';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,19 +36,25 @@ import { ImportanceComponent } from './components/aide/importance/importance.com
     DonComponent,
     ContactComponent,
     AideComponent,
-    GarantieComponent,
-    ServiceComponent,
-    InscritComponent,
-    ImportanceComponent
+    NewsComponent,
+    LatestnewsComponent,
+    ManifestationComponent,
+    AdminComponent,
+    DashboardComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AboutModule,
-    MatFormFieldModule,
-    MatOptionModule
+    AideModule,
+    NgbModule,
+    FormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
-  providers: [],
+  providers: [NavBarService, httpInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
